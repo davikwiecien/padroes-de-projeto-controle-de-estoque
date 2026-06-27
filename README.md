@@ -1,0 +1,1 @@
+# padroes-de-projeto-controle-de-estoque
