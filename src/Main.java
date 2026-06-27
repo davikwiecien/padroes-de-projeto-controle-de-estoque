@@ -70,7 +70,7 @@ public class Main {
         System.out.println("Realizando 5ª venda (teste de produto não encontrado)...");
         caixa.realizarVenda(99, 1, new SemDesconto());
         
-        // mostrando o estoque final depois das venda pra validar a baixa
+        // mostrando o estoque depois das venda pra validar a baixa
         estoque.exibirEstoque();
 
         // teste de atualização de protudo
@@ -78,8 +78,11 @@ public class Main {
         estoque.atualizarPrecoProduto(1, 99.90);
 
         // teste de exclusão de produto
-        System.out.println("realizando teste de delete (removendo a Jaqueta de Couro do sistema)...");
+        System.out.println("Realizando teste de delete (removendo a Jaqueta de Couro do sistema)...");
         estoque.removerProduto(3);
+
+        // mostrando o estoque final depois do update e delete
+        estoque.exibirEstoque();
 
     }
 }
